@@ -1,38 +1,169 @@
 .App {
   text-align: center;
+  background-color: #5a5c61;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+a{margin:13px;}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#nav{
+  position: absolute;
+  top: 5px;
+  right:10px;
+}
+.data{
+  height: 400px;
+  width: 350px;
+border:2px solid #ddd;
+margin:25px;
+box-shadow: .1em .1em 1em #ccc;
+
+    
+}
+.datas{
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex; 
+  flex-wrap: wrap; 
+  right:10px;
+}
+.footer{
+  height: 300px;
+  margin-top:30px;
+  border-top: 2px solid #5a5c61;
+  background-color: rgb(61, 102, 138);
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex; 
+  flex-wrap: wrap; 
+  right:10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+button{
+  background-color: #329bd8;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin:13px;
+  box-shadow: .1em .1em 1em #ccc;
+  
+  }
+  button:hover{
+    background-color: #c0d1db;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  header{
+    position:fixed;
+    background-color: slateblue;
+    width: 1300px;
+    top: 0px;
+    z-index: 1000;
   }
-  to {
-    transform: rotate(360deg);
+  .welcome{
+    margin-top: 80px;
+    height: 450px;
+    background-color: blue;
+    position:static;
+    box-shadow: .1em .1em 1em #ccc;
+    background-image: url("../src/pics/second.jpg");
+  background-size: cover;
+  background-position: left;
+  
+  
+    
+    
   }
+  .form-div{
+    position:absolute;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    top:50px;
+    right: 20px;
+    border: 2px solid #ccc;
+    box-shadow: .1em .1em 1em #ccc;
+    
+  }
+  img{
+    padding: 30px;
+    position :relative;
+  }
+  .welcome-div{
+    position:absolute;
+    top: 60px;
+    right: 10px;
+
+  }
+  .address-div{
+    border:2px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+  }
+  .about{
+    width:250px;
+    height: 200px;
+    border-radius: 10px;
+    border:2px #ddd solid;
+    margin: 10px;
+    box-shadow: .1em .1em 1em #ccc;
+  }
+.text{
+  font-size: 30px;
+color: white;
+text-shadow: 0 1px 0 #ccc,
+0 2px 0 #c9c9c9,
+0 3px 0 #bbb,
+0 4px 0 #b9b9b9,
+0 5px 0 #aaa,
+0 6px 1px rgba(0,0,0,.1),
+0 0 5px rgba(0,0,0,.1),
+0 1px 3px rgba(0,0,0,.3),
+0 3px 5px rgba(0,0,0,.2),
+0 5px 10px rgba(0,0,0,.25),
+0 10px 10px rgba(0,0,0,.2),
+0 20px 20px rgba(0,0,0,.15);
+}
+.reg-nav{
+  background-image: url("../src/pics/second.jpg");
+  background-size: cover; 
+  
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 800px;
+  background-color: #5f5353;
+}
+.address{
+  background-image: url("../src/pics/sixth.jpg");
+  background-size: cover; 
+  
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 680px;
+}
+p{
+  margin:4px;
+  font-family:'Times New Roman', Times, serif ;
+}
+h1{
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  color:#e2d9d9;
+}
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  color:#fff;
+}
+.abouts{
+  width:100px;
+  height: 100px;
+  border-radius: 10px;
+  border:2px #ddd solid;
+  margin: 10px;
+  box-shadow: .1em .1em 1em #ccc;
 }
