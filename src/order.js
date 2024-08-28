@@ -1,25 +1,28 @@
-import React from 'react'
+import React ,{useState} from 'react'
 
 function Order() {
+  const[form,setForm] = useState(false)
   const handleClick = ()=>{
-  window.location.href = "http://localhost:3000/"
+  setForm(!form)
   }
   return (
     <>
     <div className='reg-nav' >
       
-        <button   onClick={handleClick} >Back Home</button>
-        <button>Sign Up</button>
+        
+        <button  onClick={handleClick}   >Sign Up</button>
+        <center>
         <h1  style={{width:"300px",right:"40px" ,fontSize:"42px", color:"aqua"}} >Sign up with some of your information for subscription and 
           to know more about us
 
         </h1>
-        <div className='form-div' >
-          <center>
+        {form &&(
+          <div className='form-div' >
+          
             <form>
               <div  >
-                <h1>Remember To Comment Your Interest!</h1>
-                </div><br/><br/>
+                </div><br/><br/>\
+                <p>Press Order Via Comment:</p>
                 <label>Names:<input className='input' type='text' /></label><br/><br/>
                 <label>Email:<input className='input' type='email' /></label><br/><br/>
                 <label>Contact:<input className='input' type='tel' /></label><br/><br/>
@@ -28,10 +31,12 @@ function Order() {
                 <label><input type='submit' /></label>
                 <label><input  type='reset' /></label><br/><br/>
             </form>
-            </center>
+            
         </div>
         
-      
+        )}
+        
+        </center>
       
     </div>
     

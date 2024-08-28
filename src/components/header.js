@@ -6,15 +6,8 @@ import Footer from './footer'
 import Address from '../Address'
 import Order from '../order'
 function Heading() {
-
-const handleClick = (e)=>{
-window.location.href = "http://localhost:3000/order"
-}
-const handleContacts = (e)=>{
-  window.location.href = "http://localhost:3000/contact"
-  }
   const [info,setInfo] = useState(false)
-  const handleInfo = () =>{
+  const handleMenu = () =>{
     setInfo(!info)
   }
 
@@ -23,12 +16,18 @@ const handleContacts = (e)=>{
       <header>
         <h1 className='text'>EAMON DREADS SALON KAMPALA</h1>
         <div id='nav' >
-
-       
-        <a href='https://mail.google.com/mail/u/0/#inbox' >email us</a>
-        <a href='http://google.com' >quick help</a>
+          <button onClick={handleMenu} >MENU</button>
         </div>
-        
+
+        {info && (<div className='div'>
+          <b>Home</b><br/>
+          <select>Links
+            <option>email us</option>
+            <option>FAQS</option>
+          </select><br/>
+
+          <input type='text' /><button>Search</button>
+        </div>)}
       </header>
       <Welcome />
       <Data />
