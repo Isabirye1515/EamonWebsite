@@ -9,10 +9,12 @@ export default function Address() {
     { id: 4, name: "Instagram", url: "https://www.instagram.com/eamon_dreads_kampala/p/C6cnlBqowg3/?locale=es_US", user: "eamon | Unlock your beauty of dreadlocks ..." },
     { id: 5, name: "tiktok", url: "https://www.tiktok.com/@eamondreadssalon/video/7262751627570908421", user: "Eamon dreads salon Kampala (@eamondreadssalon)" },
   ];
-
+const handleBack = () =>{
+  window.location.href ="http://localhost:3000/";
+}
   return (
     <div className='address' >
-      <button>back</button>
+      <button onClick={handleBack} >back</button>
       {social.map((element, index) => (
         <div key={element.id} className='address-div' >
           <h3>{element.user}</h3>

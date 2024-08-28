@@ -1,3 +1,10 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .App {
   text-align: center;
   background-color: #5a5c61;
@@ -7,163 +14,227 @@
   height: 40vmin;
   pointer-events: none;
 }
-a{margin:13px;}
+
+a {
+  margin: 13px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+label{
+  font-size:24px ;
+}
 
-#nav{
+#nav {
   position: absolute;
   top: 5px;
-  right:10px;
+  right: 10px;
 }
-.data{
-  height: 400px;
-  width: 350px;
-border:2px solid #ddd;
-margin:25px;
-box-shadow: .1em .1em 1em #ccc;
 
-    
+.data {
+  height: auto;
+  width: 100%;
+  max-width: 350px;
+  border: 2px solid #ddd;
+  margin: 25px;
+  box-shadow: .1em .1em 1em #ccc;
 }
-.datas{
+
+.datas {
   padding: 5px;
   box-sizing: border-box;
-  display: flex; 
-  flex-wrap: wrap; 
-  right:10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.footer{
-  height: 300px;
-  margin-top:30px;
+
+.footer {
+  height: auto;
+  margin-top: 30px;
   border-top: 2px solid #5a5c61;
   background-color: rgb(61, 102, 138);
-  padding: 5px;
-  box-sizing: border-box;
-  display: flex; 
-  flex-wrap: wrap; 
-  right:10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-button{
+button {
   background-color: #329bd8;
   text-transform: uppercase;
   font-weight: bold;
-  margin:13px;
+  margin: 4px;
+  padding: 10px 15px;
   box-shadow: .1em .1em 1em #ccc;
-  
-  }
-  button:hover{
-    background-color: #c0d1db;
-  }
+  border-radius: 5px;
+  border: none;
+}
 
-  header{
-    position:fixed;
-    background-color: slateblue;
-    width: 1300px;
-    top: 0px;
-    z-index: 1000;
-  }
-  .welcome{
-    margin-top: 80px;
-    height: 450px;
-    background-color: blue;
-    position:static;
-    box-shadow: .1em .1em 1em #ccc;
-    background-image: url("../src/pics/second.jpg");
+button:hover {
+  background-color: #c0d1db;
+}
+
+header {
+  position: fixed;
+  background-color: slateblue;
+  width: 100%;
+  top: 0px;
+  z-index: 1000;
+  height: 50px;
+}
+
+.welcome {
+  margin-top: 60px;
+  height: 60vh;
+  background-color: blue;
+  box-shadow: .1em .1em 1em #ccc;
+  background-image: url("../src/pics/second.jpg");
   background-size: cover;
   background-position: left;
-  
-  
-    
-    
-  }
-  .form-div{
-    position:absolute;
-    border-radius: 10px;
-    width: 500px;
-    height: 500px;
-    top:50px;
-    right: 20px;
-    border: 2px solid #ccc;
-    box-shadow: .1em .1em 1em #ccc;
-    
-  }
-  img{
-    padding: 30px;
-    position :relative;
-  }
-  .welcome-div{
-    position:absolute;
-    top: 60px;
-    right: 10px;
+}
 
-  }
-  .address-div{
-    border:2px solid #ddd;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
-  }
-  .about{
-    width:250px;
-    height: 200px;
-    border-radius: 10px;
-    border:2px #ddd solid;
-    margin: 10px;
-    box-shadow: .1em .1em 1em #ccc;
-  }
-.text{
-  font-size: 30px;
-color: white;
-text-shadow: 0 1px 0 #ccc,
-0 2px 0 #c9c9c9,
-0 3px 0 #bbb,
-0 4px 0 #b9b9b9,
-0 5px 0 #aaa,
-0 6px 1px rgba(0,0,0,.1),
-0 0 5px rgba(0,0,0,.1),
-0 1px 3px rgba(0,0,0,.3),
-0 3px 5px rgba(0,0,0,.2),
-0 5px 10px rgba(0,0,0,.25),
-0 10px 10px rgba(0,0,0,.2),
-0 20px 20px rgba(0,0,0,.15);
-}
-.reg-nav{
-  background-image: url("../src/pics/second.jpg");
-  background-size: cover; 
-  
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 800px;
-  background-color: #5f5353;
-}
-.address{
-  background-image: url("../src/pics/sixth.jpg");
-  background-size: cover; 
-  
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 680px;
-}
-p{
-  margin:4px;
-  font-family:'Times New Roman', Times, serif ;
-}
-h1{
-  font-size: 45px;
-  font-family: 'Times New Roman', Times, serif;
-  color:#e2d9d9;
-}
-h2{
-  font-family: 'Times New Roman', Times, serif;
-  color:#fff;
-}
-.abouts{
-  width:100px;
-  height: 100px;
+.form-div {
+  position: absolute;
   border-radius: 10px;
-  border:2px #ddd solid;
+  width: 400;
+  max-width: 500px;
+  top: 50px;
+  right: 20px;
+  border: 2px solid #ccc;
+  box-shadow: .1em .1em 1em #ccc;
+}
+
+img {
+  padding: 30px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.welcome-div {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+
+.address-div {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.about {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  border-radius: 10px;
+  border: 2px #ddd solid;
   margin: 10px;
   box-shadow: .1em .1em 1em #ccc;
+}
+
+.text {
+  left:5px;
+  font-size: 16px;
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0, 0, 0, .1),
+               0 0 5px rgba(0, 0, 0, .1),
+               0 1px 3px rgba(0, 0, 0, .3),
+               0 3px 5px rgba(0, 0, 0, .2),
+               0 5px 10px rgba(0, 0, 0, .25),
+               0 10px 10px rgba(0, 0, 0, .2),
+               0 20px 20px rgba(0, 0, 0, .15);
+}
+
+ .address {
+  background-image: url("../src/pics/third.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 680px;
+}
+.reg-nav{
+  background-image: url("../src/pics/forth.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 680px;
+  padding:20px;
+}
+
+
+
+p {
+  margin: 4px;
+}
+.info{
+  top:40px;
+  position:absolute;
+}
+h1 {
+  font-size: 45px;
+  color: #eae0e0;
+}
+
+h2, a {
+  color: #fff;
+}
+
+.abouts {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px #ddd solid;
+  margin: 5px;
+  box-shadow: .1em .1em 1em #ccc;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .form-div {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .footer {
+    flex-direction: column;
+  }
+  
+  .data {
+    margin: 15px auto;
+    width: 90%;
+  }
+  
+  header {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome {
+    height: 50vh;
+  }
+
+  .about {
+    width: 100%;
+    max-width: 180px;
+  }
+}
+.input{
+  font-family: "Montserrat", sans-serif;
+width: 20em;
+height: 3em;
+border: 0.1em solid #ccc;
+border-radius: 0.5em;
+background-color: #feffdc;
 }
