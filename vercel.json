@@ -3,6 +3,12 @@
       { "src": "/order", "dest": "/order" },
       { "src": "/", "dest": "/" },
       { "src": "/contact", "dest": "/contact" }
+    ],
+    "rewrites":[
+        {
+            "source":"/(.*)",
+            "destination":"/index.html"
+        }
     ]
   }
   
