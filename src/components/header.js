@@ -3,6 +3,8 @@ import Welcome from './welcome'
 import Data from './data'
 import About from './about'
 import Footer from './footer'
+import Address from '../Address'
+import Order from '../order'
 function Heading() {
 
 const handleClick = (e)=>{
@@ -21,11 +23,8 @@ const handleContacts = (e)=>{
       <header>
         <h1 className='text'>EAMON DREADS SALON KAMPALA</h1>
         <div id='nav' >
-          <button onClick={handleInfo}  >Info</button>
 
-       { info && <div className='info' ><button onClick={handleClick} >Make an Order</button>
-        <button onClick={handleContacts} >contact us</button></div>
-  }
+       
         <a href='https://mail.google.com/mail/u/0/#inbox' >email us</a>
         <a href='http://google.com' >quick help</a>
         </div>
@@ -34,6 +33,8 @@ const handleContacts = (e)=>{
       <Welcome />
       <Data />
       <About />
+      <Address />
+      <Order />
       <Footer />
     </div>
   )

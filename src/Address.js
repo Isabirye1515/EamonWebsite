@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './components/footer';
+
 
 export default function Address() {
   const social = [
@@ -22,7 +22,7 @@ const handleBack = () =>{
           <a href={element.url}>Get to our {element.name} site</a>
         </div>
       ))}
-      <Footer />
+      
     </div>
   );
 }
