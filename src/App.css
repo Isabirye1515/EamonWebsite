@@ -26,6 +26,8 @@ a {
 }
 label{
   font-size:24px ;
+  color:rgb(203, 224, 40);
+  
 }
 
 #nav {
@@ -35,20 +37,22 @@ label{
 }
 
 .data {
-  height: auto;
-  width: 100%;
-  max-width: 350px;
+  
+  width:100px ;
   border: 2px solid #ddd;
-  margin: 25px;
   box-shadow: .1em .1em 1em #ccc;
+  box-sizing: border-box;
+  
+  margin:px;
+  
 }
 
 .datas {
-  padding: 5px;
-  box-sizing: border-box;
+
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
+  background-color: #8d7b7b;
 }
 
 .footer {
@@ -65,10 +69,7 @@ label{
 button {
   background-color: #329bd8;
   text-transform: uppercase;
-  font-weight: bold;
   margin: 4px;
-  padding: 10px 15px;
-  box-shadow: .1em .1em 1em #ccc;
   border-radius: 5px;
   border: none;
 }
@@ -97,22 +98,15 @@ header {
 }
 
 .form-div {
-  position: absolute;
+  position: relative;
   border-radius: 10px;
-  width: 400;
-  max-width: 500px;
-  top: 3050px;
+  width: 300px;
+  
   right: 20px;
   border: 2px solid #ccc;
   box-shadow: .1em .1em 1em #ccc;
 }
 
-img {
-  padding: 30px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 .welcome-div {
   position: absolute;
@@ -128,10 +122,8 @@ img {
 }
 
 .about {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  aspect-ratio: 5 / 4;
+  width: 250px; 
+  
   border-radius: 10px;
   border: 2px #ddd solid;
   margin: 10px;
@@ -140,7 +132,7 @@ img {
 
 .text {
 
-  font-size: 12px;
+  font-size: 20px;
   color: white;
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -175,7 +167,8 @@ img {
 
 
 p {
-  margin: 4px;
+  font-size: 24px;
+  color:aqua;
 }
 .info{
   top:40px;
@@ -183,7 +176,11 @@ p {
 }
 h1 {
   font-size: 45px;
-  color: #eae0e0;
+  color:#0f0d;
+  font-style:oblique;
+  font-family: 'Times New Roman', Times, serif;
+  
+
 }
 
 h2, a {
@@ -216,25 +213,19 @@ h2, a {
   }
   
   header {
-    height: 60px;
+    height: 70px;
   }
 }
 
-@media (max-width: 480px) {
-  .welcome {
-    height: 50vh;
-  }
 
-  .about {
-    width: 100%;
-    max-width: 180px;
-  }
-}
 .input{
   font-family: "Montserrat", sans-serif;
-width: 20em;
-height: 3em;
-border: 0.1em solid #ccc;
-border-radius: 0.5em;
+width: 150px;
+height: 20px;
+
+border-radius:4px;
 background-color: #feffdc;
+}
+.div{
+  background-color: #ddd;
 }
