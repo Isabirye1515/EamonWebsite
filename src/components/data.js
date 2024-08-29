@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import one from '../pics/third.jpg';
 import two from '../pics/forth.jpg';
 import four from '../pics/fifth.jpg';
@@ -11,7 +12,7 @@ import ten from '../pics/elleventh.jpg';
 import eleven from '../pics/twelfth.jpg';
 
 function Data() {
-  const [people, setPeople] = useState([
+  const [people] = useState([
     { image: one, hairStyle: "Kink", price: 150000 },
     { image: two, hairStyle: "Kink", price: 150000 },
     { image: four, hairStyle: "Kink", price: 150000 },

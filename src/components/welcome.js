@@ -1,6 +1,5 @@
 import React from 'react'
-import first from '../pics/first.jpg'
-import second from '../pics/second.jpg'
+
 
  function Welcome() {
   return (
