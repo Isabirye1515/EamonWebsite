@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
+  
 }
 
 .App {
@@ -16,14 +16,10 @@ body {
 }
 
 a {
-  margin: 13px;
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 label{
   font-size:24px ;
   color:rgb(203, 224, 40);
@@ -38,21 +34,20 @@ label{
 
 .data {
   
-  width:100px ;
-  border: 2px solid #ddd;
+  width:430px ;
+  border: 2px solid #fdfafa;
   box-shadow: .1em .1em 1em #ccc;
   box-sizing: border-box;
-  
-  margin:px;
+  margin:5px;
   
 }
 
 .datas {
-
+margin: left 100px;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  background-color: #8d7b7b;
+  gap: 20px;
+  background-color: #fefbfb;
 }
 
 .footer {
@@ -101,7 +96,6 @@ header {
   position: relative;
   border-radius: 10px;
   width: 300px;
-  
   right: 20px;
   border: 2px solid #ccc;
   box-shadow: .1em .1em 1em #ccc;
@@ -123,7 +117,6 @@ header {
 
 .about {
   width: 250px; 
-  
   border-radius: 10px;
   border: 2px #ddd solid;
   margin: 10px;
@@ -156,7 +149,7 @@ header {
   min-height: 680px;
 }
 .reg-nav{
-  background-image: url("../src/pics/forth.jpg");
+  background-image: url("../src/pics/fifth.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
@@ -166,17 +159,14 @@ header {
 
 
 
-p {
-  font-size: 24px;
-  color:aqua;
-}
+
 .info{
   top:40px;
   position:absolute;
 }
 h1 {
   font-size: 45px;
-  color:#0f0d;
+  color:rgba(65, 42, 170, 0.867);
   font-style:oblique;
   font-family: 'Times New Roman', Times, serif;
   
@@ -196,26 +186,7 @@ h2, a {
   box-shadow: .1em .1em 1em #ccc;
 }
 
-/* Responsive Media Queries */
-@media (max-width: 768px) {
-  .form-div {
-    width: 100%;
-    max-width: 350px;
-  }
-  
-  .footer {
-    flex-direction: column;
-  }
-  
-  .data {
-    margin: 15px auto;
-    width: 90%;
-  }
-  
-  header {
-    height: 70px;
-  }
-}
+
 
 
 .input{
@@ -228,4 +199,20 @@ background-color: #feffdc;
 }
 .div{
   background-color: #ddd;
+}
+.label{
+  color:rgb(171, 155, 230);
+  font-size: 24px;
+  margin :5px;
+  
+}
+.talk{
+  color:rgb(15, 107, 107);
+}
+.about{
+  font-size: 10px;
+}
+.comment{
+  font-size: 20px;
+  color: rgb(230, 221, 215);
 }

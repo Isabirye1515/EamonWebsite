@@ -30,9 +30,13 @@ function Heading() {
         </div>)}
       </header>
       <Welcome />
+     <b><i><p className='label' >Our prettied customers and our fare prices</p></i></b> 
       <Data />
+      <b><i><p className='label'>Our skill have esteemed us.</p></i></b>
       <About />
+      <b><i><p className='label' >Don't miss our sites. </p></i></b>
       <Address />
+      <b><i><p  className='label' >Want to notify us, Comment below.</p></i></b>
       <Order />
       <Footer />
     </div>

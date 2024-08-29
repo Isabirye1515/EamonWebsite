@@ -12,16 +12,16 @@ import eleven from '../pics/twelfth.jpg';
 
 function Data() {
   const [people, setPeople] = useState([
-    { image: one, hairStyle: "kink", price: 5000 },
-    { image: two, hairStyle: "kinki", price: 5000 },
-    { image: four, hairStyle: "kink", price: 5000 },
-    { image: five, hairStyle: "kink", price: 5000 },
-    { image: six, hairStyle: "kink", price: 8000 },
-    { image: seven, hairStyle: "kink", price: 5000 },
-    { image: eight, hairStyle: "kink", price: 5000 },
-    { image: nine, hairStyle: "kink", price: 8000 },
-    { image: ten, hairStyle: "kink", price: 5000 },
-    { image: eleven, hairStyle: "kink", price: 5000 }
+    { image: one, hairStyle: "Kink", price: 150000 },
+    { image: two, hairStyle: "Kink", price: 150000 },
+    { image: four, hairStyle: "Kink", price: 150000 },
+    { image: five, hairStyle: "Kink", price: 150000 },
+    { image: six, hairStyle: "Kink", price: 180000 },
+    { image: seven, hairStyle: "Kink", price: 150000 },
+    { image: eight, hairStyle: "Kink", price: 150000 },
+    { image: nine, hairStyle: "Kink", price: 180000 },
+    { image: ten, hairStyle: "Kink", price: 150000 },
+    { image: eleven, hairStyle: "Kink", price: 150000 }
   ]);
 
   return (
@@ -29,10 +29,10 @@ function Data() {
     <div className='datas'>
       {people.map((person, index) => (
         <div className='data' key={index}>
-          <img src={person.image} height={200} width={200} alt='images' /><br/>
+          <img src={person.image} height={300} width={400} alt='images' /><br/>
           
-          <b>HAIRSTYLE:{person.hairStyle}</b>
-          <h3 style={{color:"red"}} >CHARGE:{person.price}</h3>
+          <b>Hair style : {person.hairStyle}</b><br/>
+          <b style={{color:"red"}} >Start price : {person.price}</b>
           
           
 

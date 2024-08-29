@@ -6,8 +6,8 @@ import second from '../pics/second.jpg'
   return (
     
 <div className='welcome' >
-  <h1> <b>EAMON DREADS SOLUTIONS</b></h1>
-<h2 >Experience Prestige, Trust, and Style</h2>
+  <h1> Eamon Dreadlocks Solution</h1>
+
 <div className='welcome-div'>
 
 
