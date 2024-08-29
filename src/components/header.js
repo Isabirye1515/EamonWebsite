@@ -14,7 +14,7 @@ function Heading() {
   return (
     <div>
       <header>
-        <h1 className='text'>EAMON DREADS SALON KAMPALA</h1>
+        <h1 className='text'>EAMON DREADS KAMPALA</h1>
         <div id='nav' >
           <button onClick={handleMenu} >MENU</button>
         </div>

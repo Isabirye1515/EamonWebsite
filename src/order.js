@@ -12,10 +12,10 @@ function Order() {
         
         <button  onClick={handleClick}   >Sign Up</button>
         <center>
-        <h1  style={{width:"1000px",right:"40px" ,fontSize:"42px", color:"aqua"}} ><b>HIT </b>sign up , with some of your information for subscription and 
-          to know more about us
+        <em>HIT sign up , with some of your information for subscription and 
+        to know more about us</em>
 
-        </h1>
+        
         {form &&(
           <div className='form-div' >
           
